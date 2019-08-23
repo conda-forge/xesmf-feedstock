@@ -31,6 +31,7 @@ test:
 about:
   home: https://github.com/JiaweiZhuang/xESMF
   license: MIT
+  license_file: LICENSE
   summary: 'Universal Regridder for Geospatial Data'
   license_family: MIT
 
