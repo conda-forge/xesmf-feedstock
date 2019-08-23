@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About xesmf
 ===========
 
@@ -18,9 +14,15 @@ Summary: Universal Regridder for Geospatial Data
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/xesmf-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/xesmf-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/xesmf-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/xesmf-feedstock)
-![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4399&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/xesmf-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
@@ -114,5 +116,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@JiaweiZhuang](https://github.com/JiaweiZhuang/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 
