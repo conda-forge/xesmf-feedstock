@@ -10,15 +10,15 @@ source:
 
 build:
   number: 0
-  skip: True  # [py2k or win]
+  noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
-    - python
+    - python >=3
     - pip
   run:
-    - python
+    - python >=3
     - esmpy
     - xarray
     - numpy
