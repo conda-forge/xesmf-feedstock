@@ -1,4 +1,4 @@
-{% set version = "0.1.2" %}
+{% set version = "0.2.1" %}
 
 package:
   name: xesmf
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/x/xesmf/xesmf-{{ version }}.tar.gz
-  sha256: 0e00a293ec8a19938c81a2e62b3b389c2df2d636ee08a5a745c27295a8e18565
+  sha256: c85f7033f307f553008f6e08f8fd311ef95cd954ff34ccb4caee1d7f2338edfa
 
 build:
   number: 0
