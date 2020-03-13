@@ -1,4 +1,4 @@
-{% set version = "0.2.2" %}
+{% set version = "0.3.0" %}
 
 package:
   name: xesmf
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/x/xesmf/xesmf-{{ version }}.tar.gz
-  sha256: e38f712b12eb2f616d6373669ce9dd73f2138dccc5846c9b7cee73a835c87be7
+  sha256: 66b6deb37f43749df06819fc2003bbd394207617cf7d8fd9dafe655d7af7b94c
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -32,7 +32,7 @@ about:
   home: https://github.com/JiaweiZhuang/xESMF
   license: MIT
   license_file: LICENSE
-  summary: 'Universal Regridder for Geospatial Data'
+  summary: Universal Regridder for Geospatial Data
   license_family: MIT
 
 extra:
