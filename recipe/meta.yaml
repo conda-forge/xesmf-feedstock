@@ -5,28 +5,32 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/x/xesmf/xesmf-{{ version }}.tar.gz
-  sha256: 66b6deb37f43749df06819fc2003bbd394207617cf7d8fd9dafe655d7af7b94c
+  url: https://github.com/JiaweiZhuang/xESMF/archive/v{{ version }}.tar.gz
+  sha256: 589d425b65b21b4f054873e53dcf3755299d4d649b653c3c1c04a4777f14af64
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
-    - python >=3
+    - python >=3.5
     - pip
   run:
-    - python >=3
+    - python >=3.5
     - esmpy
-    - xarray
     - numpy
     - scipy
+    - xarray
 
 test:
   imports:
     - xesmf
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/JiaweiZhuang/xESMF
