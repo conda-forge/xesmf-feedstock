@@ -5,7 +5,7 @@ Home: https://github.com/JiaweiZhuang/xESMF
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Universal Regridder for Geospatial Data
 
