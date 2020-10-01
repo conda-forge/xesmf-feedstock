@@ -5,7 +5,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/JiaweiZhuang/xESMF/archive/v{{ version }}.tar.gz
+  url: https://github.com/pangeo-data/xESMF/archive/v{{ version }}.tar.gz
   sha256: 589d425b65b21b4f054873e53dcf3755299d4d649b653c3c1c04a4777f14af64
 
 build:
