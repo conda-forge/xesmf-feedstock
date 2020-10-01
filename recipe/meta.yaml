@@ -1,4 +1,4 @@
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: xesmf
@@ -6,20 +6,22 @@ package:
 
 source:
   url: https://github.com/pangeo-data/xESMF/archive/v{{ version }}.tar.gz
-  sha256: 589d425b65b21b4f054873e53dcf3755299d4d649b653c3c1c04a4777f14af64
+  sha256: 11cbefbd508c419f37ed3ba45cf0ff873c4798957891b5bb069354b2872bbff1
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
-    - python >=3.5
+    - python >=3.6
     - pip
+    - setuptools >=30.3.0
+    - setuptools_scm
   run:
-    - python >=3.5
-    - esmpy
+    - python >=3.6
+    - esmpy >=8.0.0
     - numpy
     - scipy
     - xarray
@@ -33,7 +35,7 @@ test:
     - pip
 
 about:
-  home: https://github.com/JiaweiZhuang/xESMF
+  home: https://github.com/pangeo-data/xESMF
   license: MIT
   license_file: LICENSE
   summary: Universal Regridder for Geospatial Data
