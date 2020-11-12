@@ -1,15 +1,13 @@
 About xesmf
 ===========
 
-Home: https://github.com/JiaweiZhuang/xESMF
+Home: https://github.com/pangeo-data/xESMF
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xesmf-feedstock/blob/master/LICENSE.txt)
 
 Summary: Universal Regridder for Geospatial Data
-
-
 
 Current build status
 ====================
