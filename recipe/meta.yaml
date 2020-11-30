@@ -1,4 +1,4 @@
-{% set version = "0.4.0" %}
+{% set version = "0.5.0" %}
 
 package:
   name: xesmf
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/pangeo-data/xESMF/releases/download/v{{ version }}/xesmf-{{ version }}.tar.gz
-  sha256: 23c0000ea0fad8b89845e3d5381b07e2b9caa5ef32ea67e33c9e010e50559a3a
+  sha256: 5d4bb2b2bd4aee549f56200dca25b995a1bf5cb72c86629308ccdd4ee5b68c79
 
 build:
   number: 0
@@ -22,15 +22,18 @@ requirements:
   run:
     - python >=3.6
     - esmpy >=8.0.0
-    - numpy
+    - xarray <=0.16.0
+    - numpy >=1.16
     - scipy
-    - xarray
+    - shapely
+    - cf_xarray >=0.3.1
 
 test:
   imports:
     - xesmf
   commands:
     - pip check
+    - python -c "import xesmf; print(xesmf.__version__)"
   requires:
     - pip
 
