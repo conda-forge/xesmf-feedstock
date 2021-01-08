@@ -9,7 +9,7 @@ source:
   sha256: 5d4bb2b2bd4aee549f56200dca25b995a1bf5cb72c86629308ccdd4ee5b68c79
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.6
     - esmpy >=8.0.0
-    - xarray <=0.16.0
+    - xarray !=0.16.1
     - numpy >=1.16
     - scipy
     - shapely
