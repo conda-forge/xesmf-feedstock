@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/pangeo-data/xESMF/releases/download/v{{ version }}/xesmf-{{ version }}.tar.gz
-  sha256: ec2a11c8b73b2bd8cfff4057fa6dddd956bc0a010d8e1a6bc6a628cf38321d52
+  sha256: 352a0a74b5f5afaf20fc04227936bb4c90d6f5b318248f459eb600455c573afa
 
 build:
   number: 0
