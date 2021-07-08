@@ -1,4 +1,4 @@
-{% set version = "0.5.3" %}
+{% set version = "0.6.0" %}
 
 package:
   name: xesmf
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/pangeo-data/xESMF/releases/download/v{{ version }}/xesmf-{{ version }}.tar.gz
-  sha256: dba0e0cf08e830259d6081d24f98cf4d9052ed4d259fb24c59e13250c64b8593
+  sha256: 733bd95b4636273c18c15897cbebb07c70dfb42efefeb8dec31f8463fe50519b
 
 build:
   number: 0
@@ -14,7 +14,7 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
+  host:
     - python >=3.6
     - pip
     - setuptools >=30.3.0
