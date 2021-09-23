@@ -22,11 +22,10 @@ requirements:
   run:
     - python >=3.6
     - esmpy >=8.0.0
-    - xarray !=0.16.1
-    - numpy >=1.16
-    - scipy
+    - xarray >=0.16.2
     - shapely
-    - cf_xarray >=0.3.1
+    - cf_xarray >=0.5.1
+    - sparse
 
 test:
   imports:
