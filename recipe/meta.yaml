@@ -9,7 +9,7 @@ source:
   sha256: 61272d40669c47767fc3301550e4e8e936b049fda870f085488a7375f367c83b
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -23,19 +23,24 @@ requirements:
     - python >=3.6
     - esmpy >=8.0.0
     - xarray >=0.16.2
-    - shapely
+    - numpy >=1.16
+    - shapely <2.0
     - cf_xarray >=0.5.1
     - sparse >=0.8.0
-    - numba
+    - numba >=0.55.2
 
 test:
+  requires:
+    - pip
+    - pytest
+    - dask
+    - cftime
   imports:
     - xesmf
   commands:
-    - pip check
-    - python -c "import xesmf; print(xesmf.__version__)"
-  requires:
-    - pip
+    # needs to fix: esmpy 8.4.0 requires pytest-json-report, which is not installed.
+    # - pip check
+    - python -m pytest --pyargs xesmf
 
 about:
   home: https://github.com/pangeo-data/xESMF
