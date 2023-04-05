@@ -1,11 +1,11 @@
-About xesmf
-===========
+About xesmf-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xesmf-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/pangeo-data/xESMF
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xesmf-feedstock/blob/main/LICENSE.txt)
 
 Summary: Universal Regridder for Geospatial Data
 
@@ -147,4 +147,5 @@ Feedstock Maintainers
 * [@huard](https://github.com/huard/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 * [@raphaeldussin](https://github.com/raphaeldussin/)
+* [@zklaus](https://github.com/zklaus/)
 
