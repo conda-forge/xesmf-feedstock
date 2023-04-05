@@ -1,12 +1,13 @@
-{% set version = "0.7.0" %}
+{% set name = "xesmf" %}
+{% set version = "0.7.1" %}
 
 package:
-  name: xesmf
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/pangeo-data/xESMF/releases/download/v{{ version }}/xesmf-{{ version }}.tar.gz
-  sha256: 61272d40669c47767fc3301550e4e8e936b049fda870f085488a7375f367c83b
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 426247ee09a963579102082a6820ccebe7c016eaa6a1c0cd7453657341d210c0
 
 build:
   number: 0
@@ -15,19 +16,20 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
-    - setuptools >=30.3.0
+    - setuptools >=41.2
     - setuptools_scm
+    - wheel
   run:
-    - python >=3.6
-    - esmpy >=8.0.0
-    - xarray >=0.16.2
-    - numpy >=1.16
-    - shapely <2.0
+    - python >=3.8
     - cf_xarray >=0.5.1
-    - sparse >=0.8.0
+    - esmpy >=8.0.0
     - numba >=0.55.2
+    - numpy >=1.16
+    - shapely
+    - sparse >=0.8.0
+    - xarray >=0.16.2
 
 test:
   requires:
@@ -55,3 +57,4 @@ extra:
     - JiaweiZhuang
     - raphaeldussin
     - huard
+    - zklaus
