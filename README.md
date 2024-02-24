@@ -144,6 +144,7 @@ Feedstock Maintainers
 =====================
 
 * [@JiaweiZhuang](https://github.com/JiaweiZhuang/)
+* [@aulemahal](https://github.com/aulemahal/)
 * [@huard](https://github.com/huard/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 * [@raphaeldussin](https://github.com/raphaeldussin/)
