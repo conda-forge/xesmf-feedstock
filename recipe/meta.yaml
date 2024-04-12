@@ -1,5 +1,5 @@
 {% set name = "xesmf" %}
-{% set version = "0.8.4" %}
+{% set version = "0.8.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c5a2c4b3e8dbbc9fccd5772a940f9067d68e824215ef87ba222b06718c4eeb56
+  sha256: 6767752f75d1900f9d28ce7e70d979964bed0ad7f1a16e1b34fac049cc26f88b
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
