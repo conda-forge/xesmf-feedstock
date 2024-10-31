@@ -24,7 +24,7 @@ requirements:
   run:
     - python >=3.8
     - cf_xarray >=0.5.1
-    - esmpy >=8.0.0
+    - esmpy >=8.0.0,!=8.4.0,!=8.4.1,!=8.4.2
     - numba >=0.55.2
     - numpy >=1.16
     - shapely
