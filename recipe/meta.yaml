@@ -1,13 +1,13 @@
 {% set name = "xesmf" %}
-{% set version = "0.8.7" %}
+{% set version = "0.8.8" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 16ef17f32788757fe01b5946038392f3f2b128c0157ff71c6497e66b10237c6a
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 8588f83007ce7011379991f516be3691df6fb30486741f0e1c33aa962056ea33
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
   run:
     - python >=3.8
     - cf_xarray >=0.5.1
-    - esmpy >=8.0.0
+    - esmpy >=8.0.0,!=8.4.0,!=8.4.1,!=8.4.2
     - numba >=0.55.2
     - numpy >=1.16
     - shapely
