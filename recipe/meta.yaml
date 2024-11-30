@@ -10,19 +10,19 @@ source:
   sha256: 8588f83007ce7011379991f516be3691df6fb30486741f0e1c33aa962056ea33
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - setuptools >=41.2
     - setuptools_scm
     - wheel
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - cf_xarray >=0.5.1
     - esmpy >=8.0.0,!=8.4.0,!=8.4.1,!=8.4.2
     - numba >=0.55.2
@@ -37,6 +37,7 @@ test:
     - pytest
     - dask
     - cftime
+    - python {{ python_min }}
   imports:
     - xesmf
   commands:
