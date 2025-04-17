@@ -22,6 +22,7 @@ requirements:
     - setuptools_scm
     - wheel
   run:
+    - cf-xarray >=0.5.1
     - python >={{ python_min }}
     - cf_xarray >=0.5.1
     - esmpy >=8.0.0,!=8.4.0,!=8.4.1,!=8.4.2
