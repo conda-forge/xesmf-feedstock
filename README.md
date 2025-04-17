@@ -150,6 +150,3 @@ Feedstock Maintainers
 * [@raphaeldussin](https://github.com/raphaeldussin/)
 * [@zklaus](https://github.com/zklaus/)
 
-
-<!-- dummy commit to enable rerendering -->
-
