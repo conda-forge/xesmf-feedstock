@@ -1,5 +1,5 @@
 {% set name = "xesmf" %}
-{% set version = "0.8.9" %}
+{% set version = "0.8.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5ecb5276f94137eba8d5ce532c3757a07df4e19d2fdf974289d4651c173c914e
+  sha256: 6f924cfd16e40e9adaad80af26fd1f26e509e66b177ea80ae45c3ef1ed56f5fd
 
 build:
   number: 0
@@ -22,6 +22,7 @@ requirements:
     - setuptools_scm
     - wheel
   run:
+    - cf-xarray >=0.5.1
     - python >={{ python_min }}
     - cf_xarray >=0.5.1
     - esmpy >=8.0.0,!=8.4.0,!=8.4.1,!=8.4.2
