@@ -22,7 +22,6 @@ requirements:
     - setuptools_scm
     - wheel
   run:
-    - cf-xarray >=0.5.1
     - python >={{ python_min }}
     - cf_xarray >=0.5.1
     - esmpy >=8.0.0,!=8.4.0,!=8.4.1,!=8.4.2
@@ -43,7 +42,7 @@ test:
     - xesmf
   commands:
     # needs to fix: esmpy 8.4.0 requires pytest-json-report, which is not installed.
-    # - pip check
+    - pip check
     - python -m pytest --pyargs xesmf
 
 about:
