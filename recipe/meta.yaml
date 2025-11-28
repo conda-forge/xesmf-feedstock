@@ -38,6 +38,7 @@ test:
     - pytest
     - dask
     - cftime
+    - netcdf4
     - python {{ python_min }}
   imports:
     - xesmf
