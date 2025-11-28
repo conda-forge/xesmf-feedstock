@@ -1,5 +1,6 @@
 {% set name = "xesmf" %}
 {% set version = "0.9.2" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +13,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
@@ -22,9 +23,8 @@ requirements:
     - setuptools_scm
     - wheel
   run:
-    - cf-xarray >=0.5.1
     - python >={{ python_min }}
-    - cf_xarray >=0.5.1
+    - cf-xarray >=0.5.1
     - esmpy >=8.0.0,!=8.4.0,!=8.4.1,!=8.4.2
     - numba >=0.55.2
     - numpy >=1.16
@@ -42,7 +42,6 @@ test:
   imports:
     - xesmf
   commands:
-    # needs to fix: esmpy 8.4.0 requires pytest-json-report, which is not installed.
     - pip check
     - python -m pytest --pyargs xesmf
 
